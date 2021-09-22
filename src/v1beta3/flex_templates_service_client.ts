@@ -342,6 +342,10 @@ export class FlexTemplatesServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.launchFlexTemplate(request);
+   *
+   * @example <caption>include:samples/generated/v1beta3/flex_templates_service.launch_flex_template.js</caption>
+   * region_tag:dataflow_launch_flex_template_sample
+   *
    */
   launchFlexTemplate(
     request?: protos.google.dataflow.v1beta3.ILaunchFlexTemplateRequest,

@@ -337,6 +337,10 @@ export class SnapshotsV1Beta3Client {
    *   for more details and examples.
    * @example
    * const [response] = await client.getSnapshot(request);
+   *
+   * @example <caption>include:samples/generated/v1beta3/snapshots_v1_beta3.get_snapshot.js</caption>
+   * region_tag:dataflow_get_snapshot_sample
+   *
    */
   getSnapshot(
     request?: protos.google.dataflow.v1beta3.IGetSnapshotRequest,
@@ -418,6 +422,10 @@ export class SnapshotsV1Beta3Client {
    *   for more details and examples.
    * @example
    * const [response] = await client.deleteSnapshot(request);
+   *
+   * @example <caption>include:samples/generated/v1beta3/snapshots_v1_beta3.delete_snapshot.js</caption>
+   * region_tag:dataflow_delete_snapshot_sample
+   *
    */
   deleteSnapshot(
     request?: protos.google.dataflow.v1beta3.IDeleteSnapshotRequest,
@@ -501,6 +509,10 @@ export class SnapshotsV1Beta3Client {
    *   for more details and examples.
    * @example
    * const [response] = await client.listSnapshots(request);
+   *
+   * @example <caption>include:samples/generated/v1beta3/snapshots_v1_beta3.list_snapshots.js</caption>
+   * region_tag:dataflow_list_snapshots_sample
+   *
    */
   listSnapshots(
     request?: protos.google.dataflow.v1beta3.IListSnapshotsRequest,

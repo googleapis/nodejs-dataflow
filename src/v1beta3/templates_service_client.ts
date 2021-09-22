@@ -351,6 +351,10 @@ export class TemplatesServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.createJobFromTemplate(request);
+   *
+   * @example <caption>include:samples/generated/v1beta3/templates_service.create_job_from_template.js</caption>
+   * region_tag:dataflow_create_job_from_template_sample
+   *
    */
   createJobFromTemplate(
     request?: protos.google.dataflow.v1beta3.ICreateJobFromTemplateRequest,
@@ -448,6 +452,10 @@ export class TemplatesServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.launchTemplate(request);
+   *
+   * @example <caption>include:samples/generated/v1beta3/templates_service.launch_template.js</caption>
+   * region_tag:dataflow_launch_template_sample
+   *
    */
   launchTemplate(
     request?: protos.google.dataflow.v1beta3.ILaunchTemplateRequest,
@@ -537,6 +545,10 @@ export class TemplatesServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.getTemplate(request);
+   *
+   * @example <caption>include:samples/generated/v1beta3/templates_service.get_template.js</caption>
+   * region_tag:dataflow_get_template_sample
+   *
    */
   getTemplate(
     request?: protos.google.dataflow.v1beta3.IGetTemplateRequest,
