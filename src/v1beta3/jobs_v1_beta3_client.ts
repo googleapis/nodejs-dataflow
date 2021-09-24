@@ -907,7 +907,8 @@ export class JobsV1Beta3Client {
   ): Transform {
     request = request || {};
     options = options || {};
-    const callSettings = new gax.CallSettings(options);
+    const defaultCallSettings = this._defaults['listJobs'];
+    const callSettings = defaultCallSettings.merge(options);
     this.initialize();
     return this.descriptors.page.listJobs.createStream(
       this.innerApiCalls.listJobs as gax.GaxCall,
@@ -963,7 +964,8 @@ export class JobsV1Beta3Client {
     request = request || {};
     options = options || {};
     options = options || {};
-    const callSettings = new gax.CallSettings(options);
+    const defaultCallSettings = this._defaults['listJobs'];
+    const callSettings = defaultCallSettings.merge(options);
     this.initialize();
     return this.descriptors.page.listJobs.asyncIterate(
       this.innerApiCalls['listJobs'] as GaxCall,
@@ -1108,7 +1110,8 @@ export class JobsV1Beta3Client {
   ): Transform {
     request = request || {};
     options = options || {};
-    const callSettings = new gax.CallSettings(options);
+    const defaultCallSettings = this._defaults['aggregatedListJobs'];
+    const callSettings = defaultCallSettings.merge(options);
     this.initialize();
     return this.descriptors.page.aggregatedListJobs.createStream(
       this.innerApiCalls.aggregatedListJobs as gax.GaxCall,
@@ -1164,7 +1167,8 @@ export class JobsV1Beta3Client {
     request = request || {};
     options = options || {};
     options = options || {};
-    const callSettings = new gax.CallSettings(options);
+    const defaultCallSettings = this._defaults['aggregatedListJobs'];
+    const callSettings = defaultCallSettings.merge(options);
     this.initialize();
     return this.descriptors.page.aggregatedListJobs.asyncIterate(
       this.innerApiCalls['aggregatedListJobs'] as GaxCall,

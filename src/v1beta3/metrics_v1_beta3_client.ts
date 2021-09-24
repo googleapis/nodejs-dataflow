@@ -552,7 +552,8 @@ export class MetricsV1Beta3Client {
   ): Transform {
     request = request || {};
     options = options || {};
-    const callSettings = new gax.CallSettings(options);
+    const defaultCallSettings = this._defaults['getJobExecutionDetails'];
+    const callSettings = defaultCallSettings.merge(options);
     this.initialize();
     return this.descriptors.page.getJobExecutionDetails.createStream(
       this.innerApiCalls.getJobExecutionDetails as gax.GaxCall,
@@ -606,7 +607,8 @@ export class MetricsV1Beta3Client {
     request = request || {};
     options = options || {};
     options = options || {};
-    const callSettings = new gax.CallSettings(options);
+    const defaultCallSettings = this._defaults['getJobExecutionDetails'];
+    const callSettings = defaultCallSettings.merge(options);
     this.initialize();
     return this.descriptors.page.getJobExecutionDetails.asyncIterate(
       this.innerApiCalls['getJobExecutionDetails'] as GaxCall,
@@ -768,7 +770,8 @@ export class MetricsV1Beta3Client {
   ): Transform {
     request = request || {};
     options = options || {};
-    const callSettings = new gax.CallSettings(options);
+    const defaultCallSettings = this._defaults['getStageExecutionDetails'];
+    const callSettings = defaultCallSettings.merge(options);
     this.initialize();
     return this.descriptors.page.getStageExecutionDetails.createStream(
       this.innerApiCalls.getStageExecutionDetails as gax.GaxCall,
@@ -828,7 +831,8 @@ export class MetricsV1Beta3Client {
     request = request || {};
     options = options || {};
     options = options || {};
-    const callSettings = new gax.CallSettings(options);
+    const defaultCallSettings = this._defaults['getStageExecutionDetails'];
+    const callSettings = defaultCallSettings.merge(options);
     this.initialize();
     return this.descriptors.page.getStageExecutionDetails.asyncIterate(
       this.innerApiCalls['getStageExecutionDetails'] as GaxCall,

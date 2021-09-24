@@ -471,7 +471,8 @@ export class MessagesV1Beta3Client {
   ): Transform {
     request = request || {};
     options = options || {};
-    const callSettings = new gax.CallSettings(options);
+    const defaultCallSettings = this._defaults['listJobMessages'];
+    const callSettings = defaultCallSettings.merge(options);
     this.initialize();
     return this.descriptors.page.listJobMessages.createStream(
       this.innerApiCalls.listJobMessages as gax.GaxCall,
@@ -533,7 +534,8 @@ export class MessagesV1Beta3Client {
     request = request || {};
     options = options || {};
     options = options || {};
-    const callSettings = new gax.CallSettings(options);
+    const defaultCallSettings = this._defaults['listJobMessages'];
+    const callSettings = defaultCallSettings.merge(options);
     this.initialize();
     return this.descriptors.page.listJobMessages.asyncIterate(
       this.innerApiCalls['listJobMessages'] as GaxCall,
