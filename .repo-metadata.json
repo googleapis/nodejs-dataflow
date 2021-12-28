@@ -12,5 +12,5 @@
   "default_version": "v1beta3",
   "requires_billing": true,
   "api_shortname": "dataflow",
-  "library_type": ""
+  "library_type": "GAPIC_AUTO"
 }
