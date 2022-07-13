@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/googleapis/nodejs-dataflow/compare/v2.0.0...v2.0.1) (2022-07-12)
+
+
+### Bug Fixes
+
+* **docs:** document fallback rest option ([#72](https://github.com/googleapis/nodejs-dataflow/issues/72)) ([bb637f7](https://github.com/googleapis/nodejs-dataflow/commit/bb637f7a64b1f3cbe78e45d1584a52874904a607))
+
 ## [2.0.0](https://github.com/googleapis/nodejs-dataflow/compare/v1.2.0...v2.0.0) (2022-06-10)
 
 
